@@ -1,0 +1,13 @@
+{
+  "name": "galaxy-expansion-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Language-neutral AI-assisted Object Pooling starter and Galaxy v1 contract verifier",
+  "scripts": {
+    "test": "node --test tests/protocol.test.mjs",
+    "verify:fixture": "node scripts/verify-protocol.mjs --fixture contracts/sample-events.jsonl",
+    "check": "npm run test && npm run verify:fixture"
+  },
+  "engines": { "node": ">=22" }
+}

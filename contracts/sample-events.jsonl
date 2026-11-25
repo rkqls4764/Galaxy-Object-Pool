@@ -1,0 +1,4 @@
+{"type":"acquire","poolSlotId":"7","generation":1,"data":{"name":"Aurora","type":"star","color":"#5dcaff","size":1.2}}
+{"type":"release","poolSlotId":"7","generation":1}
+{"type":"acquire","poolSlotId":"7","generation":2,"data":{"name":"Reborn Nova","type":"star","color":"#a78bfa","size":1.6}}
+{"type":"release","poolSlotId":"7","generation":2}

@@ -1,0 +1,24 @@
+name: Validate starter contract
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  protocol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate common protocol and fixture
+        run: npm run check
+
+# Participant AI: create a separate language-specific job/workflow that
+# builds solution/ and runs its native unit tests and protocol verifier.
+# Do not claim this workflow validates a participant's ObjectPool implementation.

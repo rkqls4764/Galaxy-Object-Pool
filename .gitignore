@@ -1,0 +1,36 @@
+# Runtime / cache
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Java / Kotlin
+*.class
+.gradle/
+
+# C / C++ / C#
+build/
+cmake-build-*/
+CMakeFiles/
+*.o
+*.obj
+*.exe
+*.dll
+*.pdb
+bin/
+obj/
+
+# Rust
+target/
+
+# Go
+*.test
